@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MEK-ow-h4V">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5td-pi-EUa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="onboardingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEK-ow-h4V" customClass="ViewController" customModule="OnBoardingScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9RA-3g-dck">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfw-fL-A9m">
+                                <rect key="frame" x="0.0" y="-44" width="414" height="940"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3my-xr-eOg">
+                                <rect key="frame" x="158" y="98" width="60" height="37"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.41697174370000001" green="0.61740340930000004" blue="0.57082604960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="pfw-fL-A9m" firstAttribute="top" secondItem="xIQ-wc-kWh" secondAttribute="top" constant="-88" id="OLY-4T-N5N"/>
+                            <constraint firstAttribute="bottom" secondItem="pfw-fL-A9m" secondAttribute="bottom" id="Pb3-37-4Vp"/>
+                            <constraint firstItem="3my-xr-eOg" firstAttribute="top" secondItem="xIQ-wc-kWh" secondAttribute="top" constant="10" id="SXf-Z8-LJA"/>
+                            <constraint firstItem="pfw-fL-A9m" firstAttribute="trailing" secondItem="xIQ-wc-kWh" secondAttribute="trailing" id="gJp-JL-WEe"/>
+                            <constraint firstItem="3my-xr-eOg" firstAttribute="centerX" secondItem="9RA-3g-dck" secondAttribute="centerX" id="um0-Hi-4SE"/>
+                            <constraint firstItem="pfw-fL-A9m" firstAttribute="leading" secondItem="xIQ-wc-kWh" secondAttribute="leading" id="wFf-kl-BRr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xIQ-wc-kWh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ghb-v8-MoC"/>
+                    <connections>
+                        <outlet property="pageController" destination="3my-xr-eOg" id="ReB-do-gBa"/>
+                        <outlet property="scrollView" destination="pfw-fL-A9m" id="oSe-32-s4C"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8f-2v-aD2" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="996" y="22.906403940886701"/>
         </scene>
     </scenes>
 </document>

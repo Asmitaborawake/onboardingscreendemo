@@ -12,6 +12,8 @@
 		CEC7D5AE22DF0051004FF33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7D5AC22DF0051004FF33A /* Main.storyboard */; };
 		CEC7D5B022DF0051004FF33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC7D5AF22DF0051004FF33A /* Assets.xcassets */; };
 		CEC7D5B322DF0051004FF33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7D5B122DF0051004FF33A /* LaunchScreen.storyboard */; };
+		CEC7D5BC22DF0157004FF33A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D5BA22DF0157004FF33A /* Onboarding.swift */; };
+		CEC7D5BD22DF0157004FF33A /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC7D5BB22DF0157004FF33A /* Onboarding.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CEC7D5AF22DF0051004FF33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC7D5B222DF0051004FF33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC7D5B422DF0051004FF33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC7D5BA22DF0157004FF33A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		CEC7D5BB22DF0157004FF33A /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				CEC7D5AF22DF0051004FF33A /* Assets.xcassets */,
 				CEC7D5B122DF0051004FF33A /* LaunchScreen.storyboard */,
 				CEC7D5B422DF0051004FF33A /* Info.plist */,
+				CEC7D5BA22DF0157004FF33A /* Onboarding.swift */,
+				CEC7D5BB22DF0157004FF33A /* Onboarding.xib */,
 			);
 			path = OnBoardingScreenDemo;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				CEC7D5B322DF0051004FF33A /* LaunchScreen.storyboard in Resources */,
 				CEC7D5B022DF0051004FF33A /* Assets.xcassets in Resources */,
+				CEC7D5BD22DF0157004FF33A /* Onboarding.xib in Resources */,
 				CEC7D5AE22DF0051004FF33A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC7D5BC22DF0157004FF33A /* Onboarding.swift in Sources */,
 				CEC7D5AB22DF0051004FF33A /* ViewController.swift in Sources */,
 				CEC7D5A922DF0051004FF33A /* AppDelegate.swift in Sources */,
 			);
